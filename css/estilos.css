@@ -1,8 +1,27 @@
 body{
- background-color: red;
+ background-color: white;
  font-family: 'Courier New', Courier, monospace;
  font-size: 50px;
 }
 p{
-    background-color: blue;
+    background-color: grey;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+.logo {
+    
+    display:flex;
+    width: 60px;
+    height: 60px;
+    
+}
+.NombreCompania{
+    font-size: 1.5vh;
+    text-decoration: none;
+    font-weight: 600;
 }
