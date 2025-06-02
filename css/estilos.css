@@ -9,19 +9,53 @@ p{
 
 header{
     display:flex;
+    /*justify-content: space-between;*/
     justify-content: space-between;
+    height: auto;
+    background-color: antiquewhite;
+    align-items: center;
     
 }
-
+a{
+    text-decoration: none;
+    color:black
+}
 .logo {
     
     display:flex;
-    width: 60px;
-    height: 60px;
+    align-items: center;
     
+}
+.logo img{
+    height: 50px;
 }
 .NombreCompania{
     font-size: 1.5vh;
     text-decoration: none;
     font-weight: 600;
+}
+.menu{
+    display:flex;
+    font-size: 1.5vh;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover{
+    color:blue;
+
+}
+@media (max-width:700px)
+{
+    header{
+       flex-direction: column; 
+    }
+    nav a{
+        padding: 10px ;
+    }
 }
