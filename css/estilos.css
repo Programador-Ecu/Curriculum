@@ -40,7 +40,15 @@ a{
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
     align-items: center;
+    gap: 20px;
     
+}
+.hamburguesa-menu{
+    display: none;;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 nav a{
     font-weight: 600;
@@ -57,5 +65,22 @@ nav a:hover{
     }
     nav a{
         padding: 10px ;
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+        width: auto;
+        background-color:transparent;
+    }
+    .menu.show{
+        display: flex;
+    }
+    .hamburguesa-menu{
+        display: block;
+    }
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 }
