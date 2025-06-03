@@ -67,13 +67,25 @@ nav a:hover{
         padding: 10px ;
     }
     .menu{
+        opacity: 0;
         display: none;
         flex-direction: column;
         width: auto;
-        background-color:transparent;
+        background-color:brown;
+        position: absolute;
+        top: 60px; /* debajo del header */
+        gap: 1px;
+        right: 0;
+        overflow: hidden;
+        transition: opacity 0.5s ease, max-height 0.5s ease;
+        text-align: left;
+        z-index: 10;
     }
     .menu.show{
         display: flex;
+        opacity: 1;
+        max-height: 500px; /* o un valor que contenga tu menú completo */
+        overflow: visible;
     }
     .hamburguesa-menu{
         display: block;
