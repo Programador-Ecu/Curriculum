@@ -1,11 +1,11 @@
 body{
- background-color: white;
+ background-color: rgb(252, 252, 252);
+ box-sizing: border-box;
  font-family: 'Courier New', Courier, monospace;
  font-size: 50px;
+ margin: 0;
 }
-p{
-    background-color: grey;
-}
+
 
 header{
     display:flex;
@@ -68,7 +68,9 @@ nav a:hover{
     }
     .menu{
         opacity: 0;
-        display: none;
+        max-height: 0;
+        pointer-events: none;
+       /* display: none;*/
         flex-direction: column;
         width: auto;
         background-color:brown;
@@ -86,6 +88,7 @@ nav a:hover{
         opacity: 1;
         max-height: 500px; /* o un valor que contenga tu menú completo */
         overflow: visible;
+        pointer-events: auto;
     }
     .hamburguesa-menu{
         display: block;
@@ -96,3 +99,67 @@ nav a:hover{
         align-items: center;
     }
 }
+/*Diseño celular primero*/
+
+.imagen-programador{
+    width: 100%;
+    height: auto;
+    margin: 0 0 0 0;
+}
+h3{
+    text-align: center;
+    font-size: clamp(2.0rem, 2vw, 2rem);
+    margin: 0 0;
+}
+.container{
+    max-width: 1450px;
+    margin: auto;
+    
+}
+#texto-estudios{
+    background-color: rgb(211, 211, 211); 
+    border-radius: 10px;
+}
+#texto-estudios h3, 
+#texto-estudios p {
+    color:rgb(0, 0, 0);
+}
+#texto-estudios p{
+    font-size: clamp(1.2rem,2vw,2rem)
+}
+ h4{
+    font-weight: 600;
+    font-size: clamp(1.3rem,2vw,2rem);
+    margin: 0 0;
+  }
+  .listados-proyecto p{
+    font-size: clamp(1.2rem,2vw,2rem);
+    margin:  clamp(1rem,2vw,2rem) 0;
+ 
+  }
+  #ecoomerce{
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("imagenes/ecomerce.webp");
+    
+  }
+  #institucional{
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("imagenes/institucional.png");
+  }
+  #revista-cientifica{
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("imagenes/revista.jpg");
+  }
+  .listados-proyecto{
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px;
+    text-align: justify;
+    border-radius: 10px;
+    margin: clamp(1.2rem,2vw,2rem) 0;
+
+  }
