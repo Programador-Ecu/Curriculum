@@ -125,7 +125,12 @@ h3{
     color:rgb(0, 0, 0);
 }
 #texto-estudios p{
-    font-size: clamp(1.2rem,2vw,2rem)
+    font-size: clamp(1.2rem,2vw,2rem);
+    padding: 50px;
+}
+#texto-estudios h3,
+#texto-estudios h4{
+    padding: 50px;
 }
  h4{
     font-weight: 600;
@@ -163,3 +168,60 @@ h3{
     margin: clamp(1.2rem,2vw,2rem) 0;
 
   }
+/*#experiencia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ /* .experiencia ul{
+    font-size: clamp(0.6rem,2vw,2rem);
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("imagenes/experiencia.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px;
+    
+
+}*/
+.experiencia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: clamp(0.6rem,2vw,2rem);
+    background-image: 
+    linear-gradient(rgba(0,0,0,005),rgba(0,0,0,0.5)),
+    url("imagenes/experiencia.jpg");
+   /background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px;
+}
+.experiencia ul li{
+    list-style: none;
+    font-size: clamp(1.2rem,1.2vw,2rem);
+}
+ul li::before {
+  content: "✅ ";
+  margin-right: 8px;
+}
+button{
+    width: fit-content;
+    transition: all 0.3 ease;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    font-weight: 600;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.9);
+}
+button:hover{
+    background-color: brown;
+  /*  background-position: center;*/
+    font-size: 1.5rem;
+ }
+ .boton-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
