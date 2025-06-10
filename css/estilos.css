@@ -103,7 +103,7 @@ nav a:hover{
 
 .imagen-programador{
     width: 100%;
-    height: auto;
+    height: 100%;
     margin: 0 0 0 0;
 }
 h3{
@@ -112,9 +112,13 @@ h3{
     margin: 0 0;
 }
 .container{
-    max-width: 1450px;
+    max-width: 1500px;
     margin: auto;
     
+}
+#tecnologias{
+    max-width: 1500px;
+    margin: auto;
 }
 #texto-estudios{
     background-color: rgb(211, 211, 211); 
@@ -193,7 +197,7 @@ h3{
     background-image: 
     linear-gradient(rgba(0,0,0,005),rgba(0,0,0,0.5)),
     url("imagenes/experiencia.jpg");
-   /background-size: cover;
+    background-size: cover;
     background-position: center;
     color: white;
     padding: 50px;
@@ -224,4 +228,73 @@ button:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+ }
+ @media (min-width: 701px) {
+    #tecnologias{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    #texto-estudios,
+    #imagen-estudio
+    {
+        flex: 1;
+    }
+
+    #imagen-estudio{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+   #texto-estudios h3,
+   #texto-estudios h4{
+    padding: 20px 0;
+   }
+
+   .imagen-programador{
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    
+   }
+   #texto-estudios h3{
+    font-size: clamp(1.8rem,2vw,2.1rem);
+      
+   }
+   #texto-estudios h4{
+    font-size: clamp(1.5rem,1.7vw,2.0rem);
+    text-align: center;
+   }
+   #texto-estudios p{
+    font-size: clamp(1.2rem,1.3vw,1.8rem);
+    padding: 20px 0;
+   }
+   #texto-estudios{
+    padding: 20px 20px;
+   }
+   
+   .container-proyectos{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    }
+    .listados-proyecto{
+        padding: 50px;
+    }
+    .nuestros-proyectos{
+        padding: 25px;
+    }
+    
+    #footer{
+        border-top: white;
+        background-color: #1c0d02;
+        padding: 20px 0;
+    }
+
+    #footer p{
+        margin-top: 30px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
  }
